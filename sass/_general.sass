@@ -2,6 +2,10 @@ body
   margin: 0
   padding: 0
   position: relative
+  color: $dark_grey
+  font-weight: 500
+li
+  list-style-type:  none
 
   /*====== HEADER =======*/
 .header
@@ -19,8 +23,6 @@ body
 .menu
   width: 525px
   &_list
-    list-style-type:  none
-    list-style-type: none
     display: flex
     justify-content: flex-end
 .list
@@ -30,13 +32,32 @@ body
   &__link
     color: #fff
     text-decoration: none
+    cursor: default
     &:hover
       color: $pink
       text-decoration: underline
+  &_img
+    width: 16px
+    height: 16px
+    margin-right: 10px
+    background: url("../icons/header-icons/share.svg") center no-repeat
+    visibility: hidden
 
   /*=========== SUBHEADER ========= */
 .subheader
   width: 100%
   height: 136px
   margin: 0 auto
+  background: $wight
+  .container
+    @include container()
+    justify-content: space-between
+.slider
+  &_list
+    .time
+      display: flex
+      flex-wrap: wrap
+  
+
+      
 

@@ -19,13 +19,16 @@
       <nav class="menu">
         <ul class="menu_list">
           <li class="list__item">
-            <a class="list__link active" href="index.html">Calendar</a>
+              <a class="list__link active">Calendar</a>
           </li>
           <li class="list__item">
-            <a href="#" class="list__link">Plans</a>
+              <a href="#" class="list__link">Plans</a>
           </li>
           <li class="list__item">
             <a href="#" class="list__link">To Do</a>
+          </li>
+          <li>
+            <div class="list_img"></div>   
           </li>
         </ul>
       </nav>
@@ -33,6 +36,67 @@
   </header>
   <section class="subheader">
     <div class="container">
+      <nav class="slider">
+        <li class="slider_list time"> <!-- TIME -->
+          <label for="time">
+            <input type="checkbox" name="time">
+            Today
+            <input type="checkbox" name="time">
+            Tomorrow
+            <input type="checkbox" name="time">
+            Week
+            <input type="checkbox" name="time">
+            Month
+          </label>
+        </li>
+        <li class="slider_list plans"> <!-- PLANES -->
+          <label for="planes">
+            <input type="text" placeholder="All plans">
+            <div class="planes_img"></div>
+          </label>
+          <div class="dropdown">
+            <div class="dropdown__item">
+              <label for="family">
+                <input type="radio" name="time" id="family">
+                <span class="check"></span>
+                Family</label>
+            </div>
+            <div class="dropdown__item">
+              <label for="work">
+                <input type="radio" name="time" id="work">
+                <span class="check"></span>
+                Work</label>
+            </div>
+            <div class="dropdown__item">
+              <label for="study">
+                <input type="radio" name="time" id="study">
+                <span class="check"></span>
+                Study</label>
+            </div>
+            <div class="dropdown__item">
+              <label for="wish">
+                <input type="radio" name="time" id="wish">
+                <span class="check"></span>
+                Wish</label>
+            </div>
+          </div>
+        </li>
+
+        <li class="slider_list important">  <!-- IMPORTANT -->
+          <div>
+            <button class="btn btn-major btn-active">Major</button>
+            <button class="btn btn-minor">Minor</button>
+          </div>
+        </li>
+
+        <li class="slider_list">
+          <label for="search">
+            <img src="./icons/header-icons/search.svg" alt="search">
+          </label>
+          <input name="search" id="search" type="text" placholder="">
+        </li>
+        
+      </nav>
       
     </div>
 
