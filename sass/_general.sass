@@ -7,6 +7,11 @@ body
 li
   list-style-type:  none
   display: block
+input[type="checkbox"],
+input[type="radio"]
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
 
   /*====== HEADER =======*/
 .header
@@ -60,7 +65,7 @@ li
   display: flex
   align-items: center
   &__list
-    &.time
+    &.time //================TIME ==========
       width: 240px
       display: flex
       flex-wrap: wrap
@@ -68,10 +73,6 @@ li
       width: 120px
       display: flex
       flex-direction: column
-      input[type="checkbox"]
-        -webkit-appearance: none
-        -moz-appearance: none
-        appearance: none
       label
         padding-left: 10px
         &::before
@@ -83,9 +84,169 @@ li
       input[type="checkbox"]:checked + label::before
         @include label_chacked()
   
-      
+.dropdown //==============DROPDOWN ==========
+  opacity: 0
+  overflow: hidden
+  position: absolute
+  top: 45px
+  left: 0
+  width: 100%
+  border-radius: 0px 0px 10px 10px
+  -moz-border-radius: 0px 0px 10px 10px
+  -webkit-border-radius: 0px 0px 10px 10px
+  background: $wight
+  &__item
+    width: 100%
+    height: 40px
+    padding-left: 5px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    cursor: default
+    transition: .3s
+    &:hover
+      background: $grey_hover
+      padding: 0
+      box-shadow: inset 0 0 20px 0 $wight
+      -moz-box-shadow: 0 0 20px rgba(0,0,0,0.5)
+      -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5)
     
-  
+.slider_list.plans // ================PLANS==========
+  margin-left: 50px
+  padding: 0 5px 5px 20px
+  position: relative
+  width: 165px
+  height: 40px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: $grey
+  p
+    font-size: 16px
+    margin: 0
+  &:hover
+    box-shadow: inset 0 0 20px 0 $wight
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.5)
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5)    
+.plans_btn
+  width: 32px
+  height: 32px
+  background: $wight
+  border: solid 1px $grey
+  cursor: pointer
+  @include b-radius()
+  background-image: url("../icons/header-icons/polygon.svg")
+  @include bg_img()
+  .slider-list.plan.active + .dropdown
+    opacity: 1
+    box-shadow: inset 0 0 20px 0 $wight
+    -moz-box-shadow: 0 0 20px rgba(0,0,0,0.5)
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5)
+  &:active + .dropdown
+    background: #fff
+    opacity: 1
+    
+.slider_list.important  // ================ IMPORTANT ==========
+  margin: 0 90px 0 30px
+  background: $grey
+  padding: 4px
+  .btn
+    height: 32px
+    width: 79px
+    background: $wight
+    border: solid 1px $grey
+    cursor: pointer
+    border-radius: 2px
+    -moz-border-radius: 2px
+    -webkit-border-radius: 2px
+    color: $dark_grey
+    font-weight: 500
+    font-family: 'Maven Pro'
+    font-size: 16px
+    &:hover
+      background-color: $pink
+    &:focus
+      background-color: $dark_blue
+      color: #fff
 
-      
+.slider_list.search // ============ SEARCH ==========
+  width: 360px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  border-bottom: 1px solid $grey
+  input[type="text"]
+    outline: none
+    font-weight: 500
+    font-size: 16px
+    color: $grey
+    border: none
+    width: 100%
+    &:hover
+      opacity: .5
+    &:checked
+      opacity: 1
+
+/*============ CONTENT ========== */
+.content
+  width: 100%
+  margin: 0 auto
+  background: $grey
+  .container
+    @include container()
+    justify-content: space-between
+  &__row
+    margin: 50px 0 120px
+    height: 555px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    span
+      display: inline-block
+      color: $dark_blue
+.card.inf
+  height: 175px
+  width: 263px
+  border-radius: 2px
+.card.named
+  height: 350px
+  box-shadow: 0px 0px 20px 0px $dark_grey
+  -moz-box-shadow: 0 0 20px $dark_grey
+  -webkit-box-shadow: 0 0 20px $dark_grey
+  &:hover
+    opacity: 0.7  
+.empty
+  background-color: $grey
+  background-image: url("../icons/content-icons/plus.svg")
+  @include bg_img()
+  border: solid 1px $wight
+  &:hover
+    background-image: url("../icons/content-icons/plus-hover.svg")
+.card-img
+  height: 255px
+  width: 263px
+  left: 150px
+  top: 441px
+  @include b-radius()
+.vacation
+  background-image: url("../images/vocation.png")
+  @include bg_img()
+.cinema
+  background-image: url("../images/cinema.png")
+  @include bg_img()
+.dinner
+  background-image: url("../images/dinner.png")
+  @include bg_img()
+.coffee
+  background-image: url("../images/coffee.png")
+  @include bg_img()
+
+.card-description
+  height: 95px
+  background: $wight
+  padding: 20px 0 20px 20px
+  font-size: 20px
+
+
+
 

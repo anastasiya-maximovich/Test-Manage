@@ -34,6 +34,7 @@
       </nav>
     </div>
   </header>
+
   <section class="subheader">
     <div class="container">
       <nav class="slider">
@@ -57,58 +58,106 @@
         </li>
 
         <li class="slider_list plans"> <!-- PLANES -->
-          <label for="planes">
-            <input type="text" placeholder="All plans">
-            <div class="planes_img"></div>
-          </label>
+          <p>All plans</p>
+          <button class="plans_btn"></button>
+    
           <div class="dropdown">
             <div class="dropdown__item">
-              <label for="family">
-                <input type="radio" name="time" id="family">
-                <span class="check"></span>
-                Family</label>
+              <input type="radio" name="plan" id="family">
+              <label for="family">Family</label>
             </div>
             <div class="dropdown__item">
-              <label for="work">
-                <input type="radio" name="time" id="work">
-                <span class="check"></span>
-                Work</label>
+              <input type="radio" name="plan" id="work">
+              <label for="work">Work</label>
             </div>
             <div class="dropdown__item">
-              <label for="study">
-                <input type="radio" name="time" id="study">
-                <span class="check"></span>
-                Study</label>
+              <input type="radio" name="plan" id="study">
+              <label for="study">Study</label>
             </div>
             <div class="dropdown__item">
-              <label for="wish">
-                <input type="radio" name="time" id="wish">
-                <span class="check"></span>
-                Wish</label>
+              <input type="radio" name="plan" id="wish">
+              <label for="wish">Wish</label>
             </div>
           </div>
         </li>
 
         <li class="slider_list important">  <!-- IMPORTANT -->
           <div>
-            <button class="btn btn-major btn-active">Major</button>
-            <button class="btn btn-minor">Minor</button>
+            <button class="btn btn-major btn-active">Major</button><button class="btn btn-minor">Minor</button>
           </div>
         </li>
 
-        <li class="slider_list">
+        <li class="slider_list search">
           <label for="search">
             <img src="./icons/header-icons/search.svg" alt="search">
           </label>
-          <input name="search" id="search" type="text" placholder="">
+          <input name="search" id="search" type="text" placeholder="Search for plans">
         </li>
-        
       </nav>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container">
+      <div class="content__row">
+        <div class="card inf empty"></div>
+        <div class="card named">
+          <div class="card-img vacation"></div>
+        <div class="card-description">
+          <p>Vacation</p>
+          <span>10/05/2019</span>
+        </div>
+        </div>
+      </div>
+
+      <div class="content__row">
+        <div class="card named">
+          <div class="card-img cinema"></div>
+          <div class="card-description">
+            <p>Cinema</p>
+            <span>11/05/2019</span><span>7PM</span>
+          </div>
+        </div>
+        <div class="card inf">
+          <h4>7PM - 8PM</h4>
+          <p>Doctor</p>
+          <span>11/05/2019</span>
+        </div>
+      </div>
+
+      <div class="content__row">
+        <div class="card inf ">
+          <h4>9AM - 10AM</h4>
+          <p>Meeting</p>
+          <span>10/05/2019</span>
+        </div>
+        <div class="card named">
+          <div class="card-img dinner"></div>
+          <div class="card-description">
+            <p>Family dinner</p>
+            <span>11/12/2019</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content__row">
+        <div class="card named">
+          <div class="card-img coffee"></div>
+          <div class="card-description">
+            <p>Coffee with Susan</p>
+            <span>10/05/2019</span>
+            <a href="#">http://therainforestcafe.co.uk/</a>
+          </div>
+          </div>
+        <div class="card inf">
+          <h4>4PM - 5PM</h4>
+          <p>Massage</p>
+          <span>11/08/2019</span>
+        </div>
+      </div>
       
     </div>
-
-
   </section>
-    
+  <script src="index.js"></script>
 </body>
 </html>
