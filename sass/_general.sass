@@ -6,6 +6,7 @@ body
   font-weight: 500
 li
   list-style-type:  none
+  display: block
 
   /*====== HEADER =======*/
 .header
@@ -53,10 +54,37 @@ li
     @include container()
     justify-content: space-between
 .slider
-  &_list
-    .time
+  width: 100%
+  height: 100%
+  margin: 0 auto
+  display: flex
+  align-items: center
+  &__list
+    &.time
+      width: 240px
       display: flex
       flex-wrap: wrap
+    &_item
+      width: 120px
+      display: flex
+      flex-direction: column
+      input[type="checkbox"]
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+      label
+        padding-left: 10px
+        &::before
+          @include label()
+      input[type="checkbox"]:hover + label::before
+        @include label_focus()
+      input[type="checkbox"]:focus + label::before
+        @include label_focus()
+      input[type="checkbox"]:checked + label::before
+        @include label_chacked()
+  
+      
+    
   
 
       

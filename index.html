@@ -37,18 +37,25 @@
   <section class="subheader">
     <div class="container">
       <nav class="slider">
-        <li class="slider_list time"> <!-- TIME -->
-          <label for="time">
-            <input type="checkbox" name="time">
-            Today
-            <input type="checkbox" name="time">
-            Tomorrow
-            <input type="checkbox" name="time">
-            Week
-            <input type="checkbox" name="time">
-            Month
-          </label>
+        <li class="slider__list time"> <!-- TIME -->
+          <div class="slider__list_item">
+            <input type="checkbox" id="today" name="time" checked>
+            <label for="today">Today</label>
+          </div>
+          <div class="slider__list_item">
+            <input type="checkbox" id="tomorrow" name="time">
+            <label for="tomorrow">Tomorrow </label>
+          </div>
+          <div class="slider__list_item">
+            <input type="checkbox" id="week" name="time">
+            <label for="week">Week</label>
+          </div>
+          <div class="slider__list_item">
+            <input type="checkbox" id="month" name="time">
+            <label for="month">Month</label>
+          </div>
         </li>
+
         <li class="slider_list plans"> <!-- PLANES -->
           <label for="planes">
             <input type="text" placeholder="All plans">

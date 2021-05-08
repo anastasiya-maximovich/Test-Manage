@@ -16,6 +16,7 @@ body {
 
 li {
   list-style-type: none;
+  display: block;
   /*====== HEADER =======*/
 }
 
@@ -112,11 +113,77 @@ li {
           justify-content: space-between;
 }
 
-.slider_list .time {
+.slider {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__list.time {
+  width: 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.slider__list_item {
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__list_item input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.slider__list_item label {
+  padding-left: 10px;
+}
+
+.slider__list_item label::before {
+  content: "";
+  background: #e7e7ea;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  margin-left: -10px;
+  margin-right: 10px;
+  -webkit-transition: .2s;
+  transition: .2s;
+  vertical-align: middle;
+}
+
+.slider__list_item input[type="checkbox"]:hover + label::before {
+  content: "";
+  background: #fdf1ff;
+}
+
+.slider__list_item input[type="checkbox"]:focus + label::before {
+  content: "";
+  background: #fdf1ff;
+}
+
+.slider__list_item input[type="checkbox"]:checked + label::before {
+  content: "";
+  background-color: #e8c5ed;
+  background-image: url(../icons/header-icons/mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=styles.css.map */
