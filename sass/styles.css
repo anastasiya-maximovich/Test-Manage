@@ -368,6 +368,7 @@ input[type="radio"] {
 
 .content__row {
   margin: 50px 0 120px;
+  width: 263px;
   height: 555px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,8 +383,13 @@ input[type="radio"] {
 }
 
 .content__row span {
-  display: inline-block;
   color: #383b83;
+}
+
+.content__row a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #6e6e6e;
 }
 
 .card.inf {
@@ -431,6 +437,7 @@ input[type="radio"] {
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  width: 263px;
 }
 
 .cinema {
@@ -457,7 +464,11 @@ input[type="radio"] {
 .card-description {
   height: 95px;
   background: #fdfdfd;
-  padding: 20px 0 20px 20px;
+  padding: 20px 20px 20px 20px;
   font-size: 20px;
+}
+
+.card-description .margin {
+  margin-left: 35%;
 }
 /*# sourceMappingURL=styles.css.map */

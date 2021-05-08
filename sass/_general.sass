@@ -197,13 +197,17 @@ input[type="radio"]
     justify-content: space-between
   &__row
     margin: 50px 0 120px
+    width: 263px
     height: 555px
     display: flex
     flex-direction: column
     justify-content: space-between
     span
-      display: inline-block
       color: $dark_blue
+    a
+      font-size: 16px
+      text-decoration: none
+      color: $dark_grey
 .card.inf
   height: 175px
   width: 263px
@@ -231,6 +235,7 @@ input[type="radio"]
 .vacation
   background-image: url("../images/vocation.png")
   @include bg_img()
+  width: 263px
 .cinema
   background-image: url("../images/cinema.png")
   @include bg_img()
@@ -244,8 +249,10 @@ input[type="radio"]
 .card-description
   height: 95px
   background: $wight
-  padding: 20px 0 20px 20px
+  padding: 20px 20px 20px 20px
   font-size: 20px
+  .margin
+    margin-left: 35%
 
 
 
