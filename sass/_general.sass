@@ -1,0 +1,42 @@
+body
+  margin: 0
+  padding: 0
+  position: relative
+
+  /*====== HEADER =======*/
+.header
+  margin: 0 auto
+  width: 100%
+  height: 50px
+  background: $blue
+  .container
+    @include container()  
+    justify-content: space-between
+.logo
+ cursor: pointer
+ &:hover
+  opacity: 0.8
+.menu
+  width: 525px
+  &_list
+    list-style-type:  none
+    list-style-type: none
+    display: flex
+    justify-content: flex-end
+.list
+  &__item
+    display: block
+    margin-left: 102px
+  &__link
+    color: #fff
+    text-decoration: none
+    &:hover
+      color: $pink
+      text-decoration: underline
+
+  /*=========== SUBHEADER ========= */
+.subheader
+  width: 100%
+  height: 136px
+  margin: 0 auto
+
