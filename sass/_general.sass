@@ -223,10 +223,11 @@ input[type="radio"]
   &:hover
     background: $purple
   &-text
-    padding: 20px 
+    padding-left: 20px
     h4
       font-size: 20px
       font-weight: 700
+      padding-bottom: 15px
 .card.named
   height: 350px
   box-shadow: 0px 0px 20px 0px $dark_grey
@@ -283,3 +284,31 @@ input[type="radio"]
   .container
     @include container()
     justify-content: space-between
+  .menu
+    width: 330px
+    &_list
+      justify-content: space-between
+    .list__item
+      margin: 0
+  .media
+    width: 165px
+    &_list
+      display: flex
+      justify-content: space-between
+      align-items: center
+.icon
+  width: 24px
+  height: 24px
+.instagram
+  background-image: url("../icons/footer/instagram.svg")
+  &:hover
+    background-image: url("../icons/footer/instagram-hov.svg")
+.facebook
+  background-image: url("../icons/footer/facebook.svg")
+  &:hover
+    background-image: url("../icons/footer/facebook-hov.svg") 
+.twitter
+  background-image: url("../icons/footer/twitter.svg")
+  &:hover
+    background-image: url("../icons/footer/twitter-hov.svg")   
+
