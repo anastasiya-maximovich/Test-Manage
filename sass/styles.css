@@ -229,10 +229,9 @@ input[type="radio"] {
 
 .slider_list.plans {
   margin-left: 50px;
-  padding: 0 5px 5px 20px;
-  position: relative;
-  width: 165px;
-  height: 40px;
+  padding: 5px 5px 5px 20px;
+  width: 160px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -360,15 +359,22 @@ input[type="radio"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 50px 0 120px 0;
 }
 
-.content__column {
-  margin: 50px 0 120px;
+.top {
+  margin-bottom: 30px;
+}
+
+.card {
   width: 263px;
-  height: 555px;
+}
+
+.card-inf {
+  height: 175px;
+  height: 175px;
+  width: 263px;
+  padding: 20px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,50 +385,14 @@ input[type="radio"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.content__column span {
-  color: #383b83;
-  font-size: 16px;
-}
-
-.content__column a {
-  display: block;
-  font-size: 16px;
-  text-decoration: none;
-  color: #6e6e6e;
-  padding-top: 55px;
-}
-
-.content__column a:hover {
-  text-decoration: underline;
-}
-
-.card {
-  cursor: default;
-}
-
-.card.inf {
-  height: 175px;
-  width: 263px;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   background: #fdfdfd;
 }
 
-.card.inf:hover {
+.card-inf:hover {
   background: #fdf1ff;
-}
-
-.card.inf-text {
-  padding-left: 20px;
-}
-
-.card.inf-text h4 {
-  font-size: 20px;
-  font-weight: 700;
-  padding-bottom: 15px;
 }
 
 .card.named {
@@ -436,20 +406,36 @@ input[type="radio"] {
   opacity: 0.7;
 }
 
-.card.inf.empty {
-  background-color: #e7e7ea;
-  background-image: url("../icons/content-icons/plus.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  border: solid 1px #fdfdfd;
+.card-description {
+  height: 95px;
+  padding: 20px;
 }
 
-.card.inf.empty:hover {
-  background-image: url("../icons/content-icons/plus-hover.svg");
+.card-description h4 {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 15px;
 }
 
-.card.inf.top {
-  margin-bottom: -40px;
+.card-description span {
+  color: #383b83;
+  font-size: 16px;
+}
+
+.card-description a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  color: #6e6e6e;
+  padding-top: 50px;
+}
+
+.card-description a:hover {
+  ext-decoration: underline;
+}
+
+.card {
+  cursor: default;
 }
 
 .card-img {
@@ -460,6 +446,18 @@ input[type="radio"] {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
+}
+
+.card-inf.empty {
+  background-color: #e7e7ea;
+  background-image: url("../icons/content-icons/plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: solid 1px #fdfdfd;
+}
+
+.card-inf.empty:hover {
+  background-image: url("../icons/content-icons/plus-hover.svg");
 }
 
 .vacation {
@@ -488,18 +486,7 @@ input[type="radio"] {
   background-repeat: no-repeat;
 }
 
-.coffee + .card-description {
-  height: 176px;
-}
-
-.card-description {
-  height: 95px;
-  background: #fdfdfd;
-  padding: 20px 20px 20px 20px;
-  font-size: 20px;
-}
-
-.card-description .margin {
+.margin {
   margin-left: 35%;
 }
 
@@ -583,5 +570,48 @@ input[type="radio"] {
 
 .twitter:hover {
   background-image: url("../icons/footer/twitter-hov.svg");
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu {
+    width: 67%;
+  }
+  .slider {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .slider__list.time {
+    width: 280px;
+  }
+  .slider_list.search {
+    width: 221px;
+  }
+  .slider_list.plans {
+    position: absolute;
+    margin: 0;
+    width: 145px;
+    left: 42.5%;
+    top: 10%;
+  }
+  .slider_list.important {
+    position: absolute;
+    margin: 0;
+    width: 160px;
+    top: 19%;
+    left: 42.5%;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

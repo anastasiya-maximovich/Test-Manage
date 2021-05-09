@@ -113,10 +113,9 @@ input[type="radio"]
     
 .slider_list.plans // ================PLANS==========
   margin-left: 50px
-  padding: 0 5px 5px 20px
-  position: relative
-  width: 165px
-  height: 40px
+  padding: 5px 5px 5px 20px
+  width: 160px
+  height: 30px
   display: flex
   justify-content: space-between
   align-items: center
@@ -194,62 +193,64 @@ input[type="radio"]
   background: $grey
   .container
     @include container()
-    justify-content: space-between
-  &__column
-    margin: 50px 0 120px
-    width: 263px
-    height: 555px
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    span
-      color: $dark_blue
-      font-size: 16px
-    a
-      display: block
-      font-size: 16px
-      text-decoration: none
-      color: $dark_grey
-      padding-top: 55px
-      &:hover
-        text-decoration: underline
+    padding: 50px 0 120px 0
+.top
+  margin-bottom: 30px
 .card
-  cursor: default
-.card.inf
+  width: 263px
+.card-inf
+  height: 175px
   height: 175px
   width: 263px
+  padding: 20px 30px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
   @include b-radius()
   background: $wight
   &:hover
     background: $purple
-  &-text
-    padding-left: 20px
-    h4
-      font-size: 20px
-      font-weight: 700
-      padding-bottom: 15px
 .card.named
   height: 350px
   box-shadow: 0px 0px 20px 0px $dark_grey
   -moz-box-shadow: 0 0 20px $dark_grey
   -webkit-box-shadow: 0 0 20px $dark_grey
   &:hover
-    opacity: 0.7  
-.card.inf.empty
-  background-color: $grey
-  background-image: url("../icons/content-icons/plus.svg")
-  @include bg_img()
-  border: solid 1px $wight
-  &:hover
-    background-image: url("../icons/content-icons/plus-hover.svg")
-.card.inf.top
-  margin-bottom: -40px
+    opacity: 0.7
+.card-description
+  height: 95px
+  padding: 20px
+  h4
+    font-size: 20px
+    font-weight: 700
+    padding-bottom: 15px
+  span
+    color: $dark_blue
+    font-size: 16px
+  a
+    display: block
+    font-size: 15px
+    text-decoration: none
+    color: $dark_grey
+    padding-top: 50px
+    &:hover
+      ext-decoration: underline
+.card
+  cursor: default
 .card-img
   height: 255px
   width: 263px
   left: 150px
   top: 441px
   @include b-radius()
+
+.card-inf.empty
+  background-color: $grey
+  background-image: url("../icons/content-icons/plus.svg")
+  @include bg_img()
+  border: solid 1px $wight
+  &:hover
+    background-image: url("../icons/content-icons/plus-hover.svg")
 .vacation
   background-image: url("../images/vocation.png")
   @include bg_img()
@@ -264,17 +265,8 @@ input[type="radio"]
   background-image: url("../images/coffee.png")
   height: 174px
   @include bg_img()
-  &+.card-description
-    height: 176px
-
-.card-description
-  height: 95px
-  background: $wight
-  padding: 20px 20px 20px 20px
-  font-size: 20px
-  .margin
-    margin-left: 35%
- 
+.margin
+  margin-left: 35%
 /*================= FOOTER ============*/
 .footer
   width: 100%
