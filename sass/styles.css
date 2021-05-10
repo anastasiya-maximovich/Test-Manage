@@ -303,6 +303,66 @@ input[type="radio"] {
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
+.slider-important {
+  background: #e7e7ea;
+  padding: 4px;
+}
+
+.slider-important .btn {
+  height: 32px;
+  width: 79px;
+  background: #fdfdfd;
+  border: solid 1px #e7e7ea;
+  cursor: pointer;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  color: #6e6e6e;
+  font-weight: 500;
+  font-family: 'Maven Pro';
+  font-size: 16px;
+}
+
+.slider-important .btn:hover {
+  background-color: #e8c5ed;
+}
+
+.slider-important .btn:focus {
+  background-color: #383b83;
+  color: #fff;
+}
+
+.slider-search {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e7e7ea;
+}
+
+.slider-search input[type="text"] {
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: #e7e7ea;
+  border: none;
+  width: 100%;
+}
+
+.slider-search input[type="text"]:hover {
+  opacity: .5;
+}
+
+.slider-search input[type="text"]:checked {
+  opacity: 1;
+}
+
 /*============ CONTENT ========== */
 .content {
   width: 100%;

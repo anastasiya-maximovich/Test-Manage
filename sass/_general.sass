@@ -155,6 +155,44 @@ input[type="radio"]
       -moz-box-shadow: 0 0 20px rgba(0,0,0,0.5)
       -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.5)
 
+.slider-important
+  background: $grey
+  padding: 4px
+  .btn
+    height: 32px
+    width: 79px
+    background: $wight
+    border: solid 1px $grey
+    cursor: pointer
+    @include b-radius()
+    color: $dark_grey
+    font-weight: 500
+    font-family: 'Maven Pro'
+    font-size: 16px
+    &:hover
+      background-color: $pink
+    &:focus
+      background-color: $dark_blue
+      color: #fff
+
+.slider-search // ============ SEARCH ==========
+  width: 25%
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  border-bottom: 1px solid $grey
+  input[type="text"]
+    outline: none
+    font-weight: 500
+    font-size: 16px
+    color: $grey
+    border: none
+    width: 100%
+    &:hover
+      opacity: .5
+    &:checked
+      opacity: 1
+
 
 
 /*============ CONTENT ========== */
