@@ -110,6 +110,9 @@
         bottom: 0
         height: 44px
         min-width: 320px
+        .container
+            width: 90%
+            padding: 0 10px 
         .logo
             visibility: hidden
         .media
@@ -118,12 +121,21 @@
             position: absolute
             width: 90%
             z-index: 200
-    .menu-hid
+    .menu-hid.share
         z-index: 100
         width: 12px
         height: 12px
         padding-top: 10%
-
+        padding-right: 25px
+        &:hover
+            background: $blue
+    .list__item
+        position: relative
+    .menu_img
+        display: inline-block
+        background-color: $dark_blue
+        width: 12px
+        height: 12px
+   
     
-
 
