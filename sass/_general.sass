@@ -58,7 +58,7 @@ input[type="radio"]
   display: flex
   justify-content: space-between
 .slider-time
-  width: 240px
+  width: 30%
   display: flex
   flex-wrap: wrap
   .slider__list
@@ -176,7 +176,7 @@ input[type="radio"]
       color: #fff
 
 .slider-search // ============ SEARCH ==========
-  width: 25%
+  width: 30%
   display: flex
   justify-content: flex-start
   align-items: center
@@ -208,7 +208,6 @@ input[type="radio"]
 .card
   width: 263px
 .card-inf
-  height: 175px
   height: 175px
   width: 263px
   padding: 20px 30px
@@ -243,7 +242,7 @@ input[type="radio"]
     color: $dark_grey
     padding-top: 50px
     &:hover
-      ext-decoration: underline
+      text-decoration: underline
 .card
   cursor: default
 .card-img
@@ -285,6 +284,7 @@ input[type="radio"]
   .container
     @include container()
     justify-content: space-between
+    align-items: center
   .menu
     width: 330px
     &_list
@@ -299,6 +299,15 @@ input[type="radio"]
       display: flex
       justify-content: space-between
       align-items: center
+.menu-hid
+  width: 1px
+  height: 1px
+  z-index: -100
+  margin: 0
+  background-image: url("../icons/header-icons/share.svg")
+  background-position: center
+  background-repeat: no-repeat
+
 .icon
   width: 24px
   height: 24px

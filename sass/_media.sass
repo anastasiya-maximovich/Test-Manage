@@ -4,10 +4,33 @@
         margin: 0 auto
         padding: 0 20px
         flex-wrap: wrap
+        align-items: center
     .menu
         width: 67%
     .slider
         justify-content: space-between
+    .slider-search
+        height: 25%
+        padding-top: 2.5%
+    .card.named
+        height: 350px
+        width: 220px
+    .card-img
+        height: 262px
+        width: 220px
+    .card.mamed.vocation
+        margin-bottom: 30px
+    .coffee
+        height: 174px
+    .card-description a
+        padding-top: 35px
+    .card-inf
+        height: 160px
+        width: 220px
+    .central-wrapper
+        width: 25%
+        height: 95px
+        flex-direction: column
     .slider__list.time
         width: 280px
     .slider_list.search
@@ -24,11 +47,83 @@
         width: 160px
         top: 19%
         left: 42.5%
-    
+    .content
+        .container
+            padding: 30px 24px 120px    
     .footer
         position: fixed
         bottom: 0 
         z-index: 100
-        
+
+@media (max-width: 576px)
+    .header
+        min-width: 320px
+        .menu
+            display: none
+    .subheader
+        height: 232px
+        .container
+            padding: 14px
+            display: block
+    .slider
+        flex-direction: column
+        position: relative
+    .central-wrapper
+        position: absolute
+        left: 0
+        top: 130px
+        width: 100%
+        flex-direction: row
+    .slider-search
+        width: 100%
+        position: absolute
+        left: 0
+        top: 20px
+    .slider-time
+        width: 100%
+        position: absolute
+        left: 0
+        top: 70px
+    .slider-important
+        display: flex
+        .btn
+            padding: 0
+            width: 61px
+            height: 32px
+    .card-inf
+        height: 175px
+        width: 290px
+    .card.named
+        height: 300px
+        width: 290px
+    .card-img
+        height: 210px
+        width: 290px
+    .card-img.coffee
+        height: 146px
+        swidth: 290px
+    .top
+        margin: 0
+    .card-inf, .card.named
+        margin-bottom: 14px
+    .footer
+        bottom: 0
+        height: 44px
+        min-width: 320px
+        .logo
+            visibility: hidden
+        .media
+            visibility: hidden
+        .menu
+            position: absolute
+            width: 90%
+            z-index: 200
+    .menu-hid
+        z-index: 100
+        width: 12px
+        height: 12px
+        padding-top: 10%
+
+    
 
 

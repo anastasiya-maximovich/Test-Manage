@@ -121,7 +121,7 @@ input[type="radio"] {
 }
 
 .slider-time {
-  width: 240px;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,7 +333,7 @@ input[type="radio"] {
 }
 
 .slider-search {
-  width: 25%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +393,6 @@ input[type="radio"] {
 
 .card-inf {
   height: 175px;
-  height: 175px;
   width: 263px;
   padding: 20px 30px;
   display: -webkit-box;
@@ -452,7 +451,7 @@ input[type="radio"] {
 }
 
 .card-description a:hover {
-  ext-decoration: underline;
+  text-decoration: underline;
 }
 
 .card {
@@ -532,6 +531,7 @@ input[type="radio"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  align-items: center;
 }
 
 .footer .menu {
@@ -564,6 +564,16 @@ input[type="radio"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.menu-hid {
+  width: 1px;
+  height: 1px;
+  z-index: -100;
+  margin: 0;
+  background-image: url("../icons/header-icons/share.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .icon {
@@ -602,6 +612,9 @@ input[type="radio"] {
     padding: 0 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .menu {
     width: 67%;
@@ -610,6 +623,39 @@ input[type="radio"] {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .slider-search {
+    height: 25%;
+    padding-top: 2.5%;
+  }
+  .card.named {
+    height: 350px;
+    width: 220px;
+  }
+  .card-img {
+    height: 262px;
+    width: 220px;
+  }
+  .card.mamed.vocation {
+    margin-bottom: 30px;
+  }
+  .coffee {
+    height: 174px;
+  }
+  .card-description a {
+    padding-top: 35px;
+  }
+  .card-inf {
+    height: 160px;
+    width: 220px;
+  }
+  .central-wrapper {
+    width: 25%;
+    height: 95px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .slider__list.time {
     width: 280px;
@@ -631,10 +677,112 @@ input[type="radio"] {
     top: 19%;
     left: 42.5%;
   }
+  .content .container {
+    padding: 30px 24px 120px;
+  }
   .footer {
     position: fixed;
     bottom: 0;
     z-index: 100;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    min-width: 320px;
+  }
+  .header .menu {
+    display: none;
+  }
+  .subheader {
+    height: 232px;
+  }
+  .subheader .container {
+    padding: 14px;
+    display: block;
+  }
+  .slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .central-wrapper {
+    position: absolute;
+    left: 0;
+    top: 130px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .slider-search {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
+  .slider-time {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 70px;
+  }
+  .slider-important {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slider-important .btn {
+    padding: 0;
+    width: 61px;
+    height: 32px;
+  }
+  .card-inf {
+    height: 175px;
+    width: 290px;
+  }
+  .card.named {
+    height: 300px;
+    width: 290px;
+  }
+  .card-img {
+    height: 210px;
+    width: 290px;
+  }
+  .card-img.coffee {
+    height: 146px;
+    swidth: 290px;
+  }
+  .top {
+    margin: 0;
+  }
+  .card-inf, .card.named {
+    margin-bottom: 14px;
+  }
+  .footer {
+    bottom: 0;
+    height: 44px;
+    min-width: 320px;
+  }
+  .footer .logo {
+    visibility: hidden;
+  }
+  .footer .media {
+    visibility: hidden;
+  }
+  .footer .menu {
+    position: absolute;
+    width: 90%;
+    z-index: 200;
+  }
+  .menu-hid {
+    z-index: 100;
+    width: 12px;
+    height: 12px;
+    padding-top: 10%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
