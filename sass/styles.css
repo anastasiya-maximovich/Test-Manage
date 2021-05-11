@@ -26,9 +26,9 @@ ul {
 
 input[type="checkbox"],
 input[type="radio"] {
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
   /*====== HEADER =======*/
 }
 
