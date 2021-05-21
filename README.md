@@ -1,5 +1,5 @@
 # Test-Manage
-[Deploy](https://app.netlify.com/sites/test-anastasiya-manage/settings/general)
+[Deploy](https://test-anastasiya-manage.netlify.app/)
 
 ### Разрешения:
 * Mobile 320px
